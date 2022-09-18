@@ -1,6 +1,7 @@
-﻿def i(l):
-    if len(l)==0:
-        return []
-    return [l[-1]]+i(l[:-1])
-w=[1,2,3,4,5,6]
-print(i(w))
+﻿R=0
+PC=0
+jesaispas={1:18,2:8}
+for i in range(len(jesaispas)+1):
+    R=R+jesaispas[1]
+    PC+=1
+    print(R,"  ",PC)
